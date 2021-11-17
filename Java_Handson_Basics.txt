@@ -1,0 +1,30 @@
+1.Karen got salary for this month and she spends 20% of her salary for food and 30% of her salary for travel. If she takes care of other shifts she will get 2% of the salary per day. Given her salary and the number of shifts she handled. Calculate how much she can save in her pocket after spending all these?Get salary and number of shifts as input and find the saving.
+
+2.Given the basic salary as input, write a program to calculate the bonus and display it.
+
+The bonus will be calculated based on the below category.
+Basic>20000 bonus=17%of basic+1500
+Basic>15000 bonus=15%of basic+1200
+Basic>10000 bonus=12%of basic+1000
+for rest =8%of basic+500
+
+
+
+3.Write a program to find if the student is eligible for first, second or third grade universities by finding the average of their marks. Read marks in five subjects as input,calculate average and based on the average calculate grade.
+ 
+Grade should be calculated as given below :
+Average >80 First Grade University
+Average >60 Second Grade University
+Otherwise Third Grade University
+
+4.Student Fees is calculated according to the student's 10th marks. The student will get discount in fees as follows :
+
+Marks discount(%)
+>90         -  50%
+81-90      - 25%
+70-80      - 10%
+<70         -  0%
+Calculate the fees according to above table.
+
+Note:
+Formula : fees - (fees* discount(%))

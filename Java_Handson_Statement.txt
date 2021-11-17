@@ -1,0 +1,16 @@
+1.In a car racing video game, the car is an object. You can drive the car, turn the car, or stop the car when needed but you need to drive long. You will get money according to the Km you have travelled. For example if you have travelled 123 km then the product of the km (ie 1*2*3 = 6) would be the amount you win. Write a program to find the product of the digits in the given input number.Include a method named productDigits that accepts an integer argument and returns an integer that corresponds to the product of digits in the integer.
+
+2.Write a program to find the sum of the odd digits in a number.
+
+3.Write a program to find the average of multiples of 5 upto 'n'. n is given as input.
+
+4.Write a program to that allows the user to enter 'n' numbers and finds the number of negative numbers entered and the number of positive numbers entered.
+
+5.Write a  program to print the multiplication table of an integer n upto m rows using a for loop.
+
+6.Write a program to find whether the given number is a perfect Number.
+ A number is a perfect number if the sum of the proper divisors of the number is equal to the number itself.
+
+7.Create a class with a method to find the difference between the sum of the squares and the square of the sum of the first n natural numbers.For Example if n is 10,you have to find 
+(1^2+2^2+3^2+….9^2+10^2)- 
+(1+2+3+4+5…+9+10)^2 
