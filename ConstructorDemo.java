@@ -1,45 +1,55 @@
 package com.training.ooc;
 class Student
 {
-	private int regNumber;
+	private int regNumber;//instance variable
 	private String studentName;
 	Student() //default cons(no-arg cons)
 	{
 		System.out.println("Default cons called");
-		regNumber=123;
-		studentName="abc";
+		//regNumber=123;
+		//studentName="abc";
 	}
-	
+	public Student(int regNumber) //parameterized cons
+	{
+		System.out.println("one-arg cons  called");
+		this.regNumber = regNumber;
+		
+	}
+//new Student(1001,"a")
 	public Student(int regNumber, String studentName) //parameterized cons
 	{
-		System.out.println("param cons called");
+		System.out.println("two-arg cons called");
 		this.regNumber = regNumber;
 		this.studentName = studentName;
 	}
 
-	public int getRegNumber() {
-		return regNumber;
-	}
-	public String getStudentName() {
-		return studentName;
+	
+	void display()
+	{
+		System.out.println("Regno:"+regNumber);
+		System.out.println("Name:"+studentName);
 	}
 	
 }
 public class ConstructorDemo {
 
 	public static void main(String[] args) {
-		Student s1=new Student();
-		Student s2=new Student();
-		Student s3=new Student(1001,"a");
+		Student s1=new Student();//def cons
+		Student s=new Student();//def cons
 		System.out.println("Student 1");
-		System.out.println("Reg no :"+s1.getRegNumber());
-		System.out.println("Name :"+s1.getStudentName());
+		s1.display();
 		System.out.println("Student 2");
-		System.out.println("Reg no :"+s2.getRegNumber());
-		System.out.println("Name :"+s2.getStudentName());
+		s.display();
+		
+		Student s2=new Student(1002);//one arg cons 
+		Student s3=new Student(1001,"a");//two-arg cons
+	
+		System.out.println("Student 2");
+		s2.display();
 		System.out.println("Student 3");
-		System.out.println("Reg no :"+s3.getRegNumber());
-		System.out.println("Name :"+s3.getStudentName());
+		s3.display();
+		
+		
 
 	}
 
