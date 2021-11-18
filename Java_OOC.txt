@@ -1,0 +1,98 @@
+1)Create a class named Student.Include the following protected member variables.
+name,id,age,grade,address
+Include appropriate getters and setters
+Include a default constructor and a 5-argument constructor. The order of arguments in the 5- argument constructor is name, id, age, grade and address.
+Include the following public methods in the Student class.
+void display()
+Display the details of the student.
+boolean isPassed()
+A student is said to have passed if his/her grade is above 50. This method returns true if the student has passed.
+Create a subclass of Student named UGStudent .
+Include the following private member variables.
+degree
+stream
+Include appropriate getters / setters
+Include a default constructor and a 7-argument constructor. The order of arguments in the 7-argument constructor is name, id, age, grade, address, degree and stream.
+ Include the following public methods in the UGStudent class.
+void display()
+Display the details of the ug student in the format as specified in the output.
+boolean isPassed()
+A ug student is said to have passed if his/her grade is above 70. This method returns true if the student has passed.
+Create another subclass of Student named PGStudent .
+Include the following private member variables.
+specialization
+noOfPapersPublished
+Include appropriate getters / setters
+Include a default constructor and a 7-argument constructor. The order of arguments in the 7-argument constructor is name, id, age, grade, address, specialization and number of papers published.
+ Include the following public methods in the PGStudent class.
+void display()
+Display the details of the pg student in the format as specified in the output.
+boolean isPassed()
+A pg student is said to have passed if his/her grade is above 70 and if he/she has published atleast 2 papers.This method returns true if the student has passed.
+Create a class called Main to test the above classes.
+
+
+2) The task is to get the details of the vehicle and display the details using a menu driven application.
+Write a Java program to Implement this task.
+Create a class Vehicle
+Include the following protected data members / attributes:
+make – of type String
+vehicleNumber – of type String
+fuelType – of type String
+fuelCapacity - of type Integer
+cc – of type Integer
+ 
+Include the following public methods
+Create a constructor that initializes all the data members --- public Vehicle(String make,String vehicleNumber,String fuelType,Integer fuelCapacity,Integer cc)
+displayMake – Display the make of the vehicle
+"displayBasicInfo" – display basic information of the vehicle.
+"displayDetailInfo" – An empty method.
+ 
+Create a class TwoWheeler that extends Vehicle
+kickStartAvailable – of type Boolean.
+"displayDetailInfo" – displays the availability of kick start.
+Create a class FourWheeler that extends Vehicle
+audioSystem – of type String.
+numberOfDoors – of type Integer.
+
+
+"displayDetailInfo" - displays the audio system and number of doors.
+displayDetailInfo - overridden method
+Include getter setters for all the classes.
+Create a main class to test the classes defined above.
+
+
+4.Create a class Shape and inherit three classes Square,Triangle and Rectangle. Implement the
+ method double calculateArea() in Shape class and override  the method in the subclasses. Use runtime polymorphism to call the calculateArea() method.
+ 
+5.A Company provides an initial training for all its employees, once they join the company. During the training phase they call the employees as “Associate”. The initial training is conducted for 60 days for each Associate. In these 60 days they learn various technologies. The first 20 days they learn “Core skills”, the next 20 days they learn “Advanced modules” and the final 20 days they go to the “Project phase”.  Help the Company to find in which phase the associates are in.
+Create a class Associate with associateId(int),associateName(String),workStatus(String).
+Include getters and setters and constructors.
+Add a method trackAssociateStatus
+ - This method takes the number of days as argument and sets the work status of the associate based on the number of days. If the number of days is greater than 60 days then set the work status as “Deployed in project”.
+ In the Main class, create an object for the Associate class; Get the details assign the value for its attributes using the setters. Invoke the trackAssociateStatus method and find the work status and display the details.
+
+6.Create a class Product with attributes 
+productCode -int
+productName-String
+price-double
+Include getters and setters.
+In main class, create an array to store product objects. The program should have options to add a new product,search for a particular product and display the product details. Develop this as a menu driven application.
+
+7.Create an interface IVehicle with the below methods:
+drive();
+turnLeft();
+brake();
+Create another interface IPublicTransport with a method 
+getNumberOfPeople();
+Create a class MotorisedVehicle.java with a method checkMotor() which prints the message “The motor of the vehicle is in good condition”
+
+Create a class Car.java which extends the MotorisedVehicle class and implements the IVehicle interface. This method should print appropriate messages in the implemented methods. (Ex. “The car is in brake mode” etc)
+
+Create a class Train.java which implements both the IVehicle and IPublicTransport interfaces. The implemented methods should print appropriate messages (Ex. “The train is turning left” etc)
+
+Create a new Interface IAdvancedVehicle that extends the IVehicle interface and add accelerate() method in the new interface.
+
+Test all these methods in a main class.
+
+

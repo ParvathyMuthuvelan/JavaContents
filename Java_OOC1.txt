@@ -1,0 +1,23 @@
+1.A Company provides an initial training for all its employees, once they join the company. During the training phase they call the employees as “Associate”. The initial training is conducted for 60 days for each Associate. In these 60 days they learn various technologies. The first 20 days they learn “Core skills”, the next 20 days they learn “Advanced modules” and the final 20 days they go to the “Project phase”.  Help the Company to find in which phase the associates are in.
+Create a class Associate with associateId(int),associateName(String),workStatus(String).
+Include getters and setters and constructors.
+Add a method trackAssociateStatus
+ - This method takes the number of days as argument and sets the work status of the associate based on the number of days. If the number of days is greater than 60 days then set the work status as “Deployed in project”.
+ In the Main class, create an object for the Associate class; Get the details assign the value for its attributes using the setters. Invoke the trackAssociateStatus method and find the work status and display the details.
+2.Create a class Product with attributes 
+productCode -int
+productName-String
+price-double
+Include getters and setters.
+In main class, create an array to store product objects. The program should have options to add a new product,search for a particular product and display the product details. Develop this as a menu driven application.
+3.Create an interface IVehicle with the below methods:
+drive();
+turnLeft();
+brake();
+Create another interface IPublicTransport with a method 
+getNumberOfPeople();
+Create a class MotorisedVehicle.java with a method checkMotor() which prints the message “The motor of the vehicle is in good condition”
+Create a class Car.java which extends the MotorisedVehicle class and implements the IVehicle interface. This method should print appropriate messages in the implemented methods. (Ex. “The car is in brake mode” etc)
+Create a class Train.java which implements both the IVehicle and IPublicTransport interfaces. The implemented methods should print appropriate messages (Ex. “The train is turning left” etc)
+Create a new Interface IAdvancedVehicle that extends the IVehicle interface and add accelerate() method in the new interface.
+Test all these methods in a main class.
