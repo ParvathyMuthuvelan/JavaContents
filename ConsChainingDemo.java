@@ -6,6 +6,7 @@ class Car {
 	private String color;
 
 	Car() {
+		//System.out.println(); error
 		this(2019, "Maruti");
 		System.out.println("def cons called");
 	}
@@ -34,8 +35,8 @@ public class ConsChainingDemo {
 	public static void main(String[] args) {
 		Car c = new Car();
 		c.display();
-		Car c1 = new Car(2020,"Toyota","Red");
-		c1.display();
+	//	Car c1 = new Car(2020,"Toyota","Red");
+		//c1.display();
 
 	}
 
