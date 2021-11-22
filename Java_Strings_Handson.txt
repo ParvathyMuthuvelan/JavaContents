@@ -1,0 +1,22 @@
+1.Write a program to read a string and to test whether first and last character are same. The string is said to be be valid if the 1st and last character are the same. Else the string is said to be invalid.
+
+2.Write a program to read a string and a positive integer n as input and construct a string with first n and last n characters in the given string.
+
+3. Read a string as input and remove vowels from even position in the string.
+
+4.Write code to get two strings as input and If strings are of same length simply append them together and return the final string. If given strings are of different length, remove starting characters from the longer string so that both strings are of same length then append them together and return the final string.
+
+5.Write a program to read a string from the user and remove all the alphabets and spaces from the String, and only store special characters and digit in the output String. Print the output string.
+
+6.Given an array of Strings, write a program to take the last character of each string and make a new String by concatenating it.
+
+7.Given a string array (s) and non negative integer (n) and return the number of elements in the array which have same number of characters as the givent int N.
+
+8.Obtain two strings S1,S2 from user as input. Your program should form a string 
+of  “long+short+long”, with the shorter string inside of the longer String.
+
+9.Write a program to input a String array. The input may contain digits and alphabets (“de5g4G7R”). Extract odd digits from each string and find the sum and print the output.
+For example, if the string is "AKj375A" then take 3+7+5=15 and not as 375 as digit.
+
+10.Write a program to read a string containing multiple words find the first and last words, if they are same, return the length and if not return the sum of length of the two words.
+
