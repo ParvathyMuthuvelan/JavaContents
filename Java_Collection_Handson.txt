@@ -1,0 +1,49 @@
+1.Write a program that construts a hashmap with “state” as key and “capital” as its value. If the next input is a state, then it should return capital$state in lowercase.
+Include a class  with a static method getCapital which accepts a hashmap. The return type is the string as given in the above statement
+Create a Class Main which would be used to accept Input string and call the static method .
+Sample Input 1:
+3
+Karnataka
+Bangaluru
+Punjab
+Chandigarh
+Gujarat
+Gandhinagar
+Punjab
+Sample Output 1:
+chandigarh$punjab
+
+2.Write a program that construts a hashmap and returns the value corresponding to the largest key.
+Include a class with a static method getMaxKeyValue which accepts a string. The return type (String) should be the value corresponding to the largest key.
+Create a Class Main which would be used to accept Input string and call the static method. 
+Sample Input 1:
+3
+12
+amron
+9
+Exide
+7
+SF
+Sample Output 1:
+amron
+
+3.Write a program that performs the following actions:
+    Read n strings as input.
+    Create an arraylist to store the above n strings in this arraylist.
+    Write a function convertToStringArray which accepts the arraylist as input.
+    The function should sort the elements (strings) present in the arraylist and convert them into a string array.
+    Return the array.
+5.1.Read m strings as input (fruit names).
+2.Create an arraylist to store the above m strings in this arraylist.
+3.Read n strings as input (fruit names).
+4.Create an arraylist to store the above n strings in this arraylist.
+5.Write a function fruitSelector which accepts the arraylists as input.
+6.Remove all fruits whose name ends with 'a' or 'e' from first arrayList and remove all fruits whose name begins  with 'm' or 'a' from second arrayList then combine the two lists and return the final output as a String array.
+7.If the array is empty the program will print as “No fruit found”
+
+4.Write a program to read two int array lists of size 5 each as input and to merge the two arrayLists, sort the merged arraylist in ascending order and fetch the elements at 2nd, 6th and 8th index into a new arrayList and return the final ArrayList.
+
+5.Write a program to read a string and return a modified string based on the following rules.
+Return the String without the first 2 chars except when
+1.	keep the first char if it is 'j'
+2.	keep the second char if it is 'b'.
