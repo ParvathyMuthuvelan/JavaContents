@@ -19,10 +19,10 @@ public class CallableDemo1 {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?useSSL=false", "root", "root");
 
 			String procedureCall = "{ call get_employee_by_id(?,?,?,?) }";
-
+			
 			CallableStatement callableStatement = conn.prepareCall(procedureCall);
 
-			callableStatement.setInt(1, 1001);
+			callableStatement.setInt(1, 1002);
 			callableStatement.registerOutParameter(2, Types.VARCHAR);
 			callableStatement.registerOutParameter(3, Types.INTEGER);
 			callableStatement.registerOutParameter(4, Types.VARCHAR);
@@ -37,6 +37,13 @@ public class CallableDemo1 {
 			System.out.println("Salary: " + salary);
 			System.out.println("Job: " + job);
 
+			/*String functionCall = "{ ?=call function_name(?) }";
+			CallableStatement callableStmt = conn.prepareCall(functionCall);
+			
+			callableStatement.registerOutParameter(1, Types.VARCHAR);
+			callableStatement.setInt(2, 1001);*/
+			
+			
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
 		} catch (Exception e) {
@@ -53,3 +60,20 @@ public class CallableDemo1 {
  * first_name, salary,job_id into emp_name, emp_salary, emp_job from EMPLOYEE
  * WHERE employee_id = emp_id; end;
  */
+
+
+
+/*DELIMITER $$
+CREATE PROCEDURE get_employee_by_id
+(in emp_id  int,out e_name varchar(10),out emp_sal double,out emp_job varchar(20))
+BEGIN
+	SELECT empname,salary,job into e_name,emp_sal,emp_job
+    FROM employee where 
+    empid=emp_id;
+END $$
+DELIMITER ;
+to call the procedure,
+delimiter ;
+call get_employee_by_id(1001,@outval1,@outval2,@outval3);
+select @outval1,@outval2,@outval3;
+*/
