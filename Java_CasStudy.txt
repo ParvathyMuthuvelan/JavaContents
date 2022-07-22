@@ -1,0 +1,43 @@
+The tour package details like package Id, source place, destination place, basic fare and number of days for each package should be stored in a table. Calculate the package cost based on the basic fare and the number of days for each package. 
+
+Column Name	Data type
+package_id	varchar(25) 
+source_place	varchar(25) 
+destination_place	varchar(25) 
+no_of_days	int
+package_cost	int
+
+Create a model class to represent this table with attributes, getters and setters.
+Calculate the package cost for each package, based on the conditions given below, 
+noOfDays		discount % 
+<=5		0% (No discount)
+>5 and <=8	3%
+>8 and <=10	5%
+>10		7%
+ 
+Package Cost = ((Basic fare x number of days)-discount)+GST
+
+The package cost should be calculated based on the basic fare and the number of days. The discount should be calculated depending on the number of days as given in the above table and deducted from the calculated package cost.  Finally, a GST of 12% of the calculated package cost got after the discount, should be added to get the final package cost. 
+
+For example: If a package has a basic fare as Rs.3000 and the number of days as 15, then the package cost will be (3000*15), which is Rs. 45000.00. Since the number of days is 15, the discount percentage will be 7%. So, the discount will be (45000.0*(7/100)) which is Rs. 3150.00. Now, 12% of GST needs to be added. So the GST will be ((45000.0-3150.0)*(12/100)) which is Rs. 5022.00. 
+Therefore, the total cost for this package will be (((3000*15)-3150.0)+5022.0) which is Rs. 46872.00.
+
+Get the package details as input and for every package calculate the package cost
+and then store the details in the table.
+ To calculate package cost, define a method in the dao class and call the method from main class. 
+To retrieve the package details saved into the table, define a method in dao class and call the method from main class.
+
+Classes to be created:
+Model class - Package -attributes(packageid,source,destination,no_of_days and package cost)
+Dao class -PackageDao - methods for calculating package cost and inserting into table
+fetching all package details.
+Main class
+
+Validation:
+The packageId should be validated before calculating the package cost; only if the packageId is valid, the Package object should be added to the list. The packageId should be in the following format.
+	The packageId should contain exactly 7characters.
+If the packageId is valid, then calculate the package cost, else throw a user defined Exception “InvalidPackageIdException” with a message "Invalid Package Id".
+
+
+
+
